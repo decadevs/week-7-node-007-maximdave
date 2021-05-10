@@ -3,7 +3,15 @@
   "version": "0.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "build": "tsc",
+    "start": "nodemon ./bin/www",
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns":[
+      "/node_modules"
+    ]
   },
   "dependencies": {
     "@types/express": "^4.17.11",

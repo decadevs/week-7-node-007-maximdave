@@ -118,7 +118,7 @@ router.post('/calculate', (req, res) => {
                 }
             }
             else {
-                return res.send("Please provide only the Side(length) of a Square");
+                return res.send("For a Square, the dimension is a number, Please provide only a number.");
             }
         }
         else if (shape == "circle") {
@@ -151,7 +151,7 @@ router.post('/calculate', (req, res) => {
                 }
             }
             else {
-                return res.send("Please provide only the Radius of a Circle");
+                return res.send("For a Circle, the dimension is a number, Please provide only a number.");
             }
         }
         else if (shape == "triangle") {
